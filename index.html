@@ -150,12 +150,12 @@ body[data-page="log"] .workout-entry-actions{
   margin-top:-28px; /* V23: lift the form another 24px without changing the photo */
 }
 
-/* V24: workout entry image is a real page background, with controls layered over it. */
+/* V25: workout entry background uses the same 355px hero image scale/crop as the workouts page (plus 95px upper extension). */
 body[data-page="log"] #screen{position:relative;isolation:isolate}
 body[data-page="log"] #screen::before{
   content:"";position:absolute;z-index:-1;pointer-events:none;
-  top:-105px;left:-18px;width:calc(100% + 36px);height:900px;
-  background:url('./workouts.webp') center top / 100% auto no-repeat;
+  top:-109px;left:-18px;width:calc(100% + 36px);height:450px;
+  background:url('./workouts.webp') center 43% / cover no-repeat;
   opacity:.72;
   -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 48%,rgba(0,0,0,.8) 67%,transparent 100%);
   mask-image:linear-gradient(to bottom,#000 0%,#000 48%,rgba(0,0,0,.8) 67%,transparent 100%);
